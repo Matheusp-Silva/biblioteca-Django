@@ -1,1 +1,30 @@
-<h1>Cadastro html</h1>
+{% extends 'base.html' %}
+
+{% block 'titulo'%} Cadastro {%endblock%}
+
+{%block 'conteudo'%}
+
+<div class="container"></div>
+    <br>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div style="border: 1px solid red" class="col-md">
+            <h1>Cadastre-se</h1>
+            <hr>
+
+            <form method="post">
+                <label>Nome</label>
+                <input type="text" placeholder="nome">
+                <label>Sobrenome</label>
+                <input type="text" placeholder="Sobrenome">
+                <label>E-mail</label>
+                <input type="email" placeholder="E-mail">
+                <label>Senha</label>
+                <input type="password" placeholder="Senha">
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+
+
+{%endblock%}
